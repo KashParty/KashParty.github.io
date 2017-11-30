@@ -1,167 +1,108 @@
 <!DOCTYPE html>
-<html><head><title>KashParty Home - Programming Tutorials and Books</title>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="https://fonts.googleapis.com/css?family=Megrim|Poppins" rel="stylesheet">
-<link rel="icon" href="LogoSquare.png" type="image/x-icon">
+<html>
+  <head>
+    <title>KashParty</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<meta name="msvalidate.01" content="A86245DAF03C53D39221B6FA7542DC1F">
-<meta charset="UTF-8">
-<meta name="description" content="Programming Books and Tutorials">
-<meta name="keywords" content="HTML,CSS,Python">
-<meta name="author" content="KashParty">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      function scrollDown() {
+        window.scrollBy(0,1000);
+      }
+    </script>
+  </head>
+
+
 <style>
-h1,h2,p,a{
-	font-family: "Poppins", sans-serif;
-	text-decoration: none;
+.w3-eigen{color:#fff!important;background-color:#16161d!important}
+
+body,h1,h2,p {font-family: "Raleway", sans-serif}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /*position: fixed;*/ 
+  /*overflow-y: scroll;*/
+  width: 100%;
+  /*overflow:hidden;*/
 }
 
-.w3-eigen{color:#fff!important;background-color:#16161d!important}
-.w3-white{color:#16161d!important;background-color:#ffffff!important}
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar{
+  width: 0px;
+  background: transparent;
+}
+        
+#background {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('Planet.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#KP {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 </style>
 
-</head>
-<body background="KashParty.github.io/bgPattern.png">
-<div class="w3-container w3-eigen w3-top">
-	<h1 style="font-family:Megrim"><center>kashparty</center></h1>
-	<div class="w3-bar w3-animate-left">
-		<a href="#" class="w3-bar-item w3-button w3-white w3-hover-white" style="width:33%">Home</a>
-		<a href="products.html" class="w3-bar-item w3-button w3-hover-none w3-hover-text-white" style="width:33%">Products</a> 
-		<a href="about.html" class="w3-bar-item w3-button w3-hover-none w3-hover-text-white" style="width:33%">About</a>
-	</div>
-</div>
-<br><br><br><br><br>
+<body class="w3-animate-opacity w3-light-gray">     
+  <div id="background" class="w3-card-4">&nbsp;</div>
+  <div id="KP">
+    <h1 class="w3-text-white w3-animate-top">KASHPARTY</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <center><a href="#products"><p onclick="scrollDown();" class="w3-text-white w3-animate-fading w3-button w3-ripple w3-border w3-border-gray w3-round-large" style="text-align:center">TAKE ME THERE</p></a></center>
+  </div>
 
-<div class="w3-animate-opacity">
-	<div class="w3-panel">
-		<div class="w3-card-4 w3-white w3-round">
-			<div class="w3-panel">
-				<h2>Welcome to KashParty.</h2>
-				<p>
-				KashParty is the newest innovator in software. All our products are of the very highest quality, but still user-friendly. We strive to give you the best experience possible, so that your life is easier and more productive. Not only that, but our products are sold at convenient, fair prices. 
-				</p>
-			</div>
-		</div>
-	</div>
+  <div id="products">
+    <div class="w3-container">
+      <center><h1>Our Products</h1></center>
+      <div class="w3-rest w3-eigen w3-panel w3-card w3-round-large w3-padding w3-row w3-mobile">
 
-	<!--
-	<center>
-	<div class="w3-panel" style="width:50%">
-		<div class="w3-card-4 w3-white">
-			<div class="w3-panel">
-				<h2>Video</h2>
-				<div class="w3-panel">
-				<iframe width="420" height="315"
-				src="https://www.youtube.com/embed/XGSy3_Czz8k">
-				</iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-	</center>
-	-->
+        <div class="w3-panel">
+          <img src="Portal.png" class="w3-image w3-round-large w3-card w3-third">
+          <div class="w3-rest w3-mobile">
+            <h2 class="w3-container" style="text-align: left">Professional Graphics</h2>
+            <p class="w3-container">
+              Using our versatile skill-set, we deliver high quality, custom-designed graphics quickly and for very cheap. Why spend hours toiling away at your computer to make logos which could have been better? For as little as 50p, we'll take the task off your hands and make you something amazing within a single working day. Sit back and relax!
+              <br><br>
+              <a href="mailto:kashpartyofficial@gmail.com?Subject=Customer%20E-mail" target="_top" class="w3-padding w3-round-large w3-button w3-ripple w3-border w3-border-gray">E-mail us</a>
+            </p>
+          </div>
+        </div>
 
-	<div class="w3-panel">
-		<div class="w3-card-4 w3-white w3-round">
-			<div class="w3-panel">
-				<h2>Our E-book.</h2>
-				<p>
-				We're making an e-book! It's called "Python For The Absolute Beginner" and you can get yourself a free sample of it. Head over to our products section to learn more
-				and access the book. When it's done, it'll cover enough topics to take you from beginner to pro, while still keeping things easy to understand and fun.
-				</p>
-			</div>
-		</div>
-	</div>
-	
-	<div class="w3-panel">
-		<div class="w3-card-4 w3-white w3-round">
-			<div class="w3-panel">
-				<h2>Gumroad.</h2>
-				<p>
-				Most of our products will be sold on Gumroad. Sign up for news on our latest products and access to secret free samples!
-				</p>
-				<style>
-				.gumroad-follow-form-embed {
-					zoom: 1; }
-					.gumroad-follow-form-embed:before, .gumroad-follow-form-embed:after {
-					  display: table;
-					  line-height: 0;
-					  content: ""; }
-					.gumroad-follow-form-embed:after {
-					  clear: both; }
-					.gumroad-follow-form-embed * {
-					  margin: 0;
-					  border: 0;
-					  padding: 0;
-					  outline: 0;
-					  box-sizing: border-box !important;
-					  float: left !important; }
-					.gumroad-follow-form-embed input {
-					  border-radius: 4px;
-					  border-top-right-radius: 0;
-					  border-bottom-right-radius: 0;
-					  font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-					  font-size: 15px;
-					  line-height: 20px;
-					  background: #fff;
-					  border: 1px solid #ddd;
-					  border-right: 0;
-					  color: #aaa;
-					  padding: 10px;
-					  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02);
-					  background-position: top right;
-					  background-repeat: no-repeat;
-					  text-rendering: optimizeLegibility;
-					  font-smoothing: antialiased;
-					  -webkit-appearance: none;
-					  -moz-appearance: caret;
-					  width: 65% !important;
-					  height: 40px !important; }
-					.gumroad-follow-form-embed button {
-					  border-radius: 4px;
-					  border-top-left-radius: 0;
-					  border-bottom-left-radius: 0;
-					  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
-					  -webkit-transition: all .05s ease-in-out;
-					  transition: all .05s ease-in-out;
-					  display: inline-block;
-					  padding: 11px 15px 12px;
-					  cursor: pointer;
-					  color: #fff;
-					  font-size: 15px;
-					  line-height: 100%;
-					  font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-					  background: #36a9ae;
-					  border: 1px solid #31989d;
-					  filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#5ccfd4, endColorstr=#329ca1, GradientType=0)";
-					  background: -webkit-linear-gradient(top, #5ccfd4, #329ca1);
-					  background: linear-gradient(to bottom, #5ccfd4, #329ca1);
-					  height: 40px !important;
-					  width: 35% !important; }
-				</style>
-				<form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post">
-				<input name="seller_id" type="hidden" value="4903444783794">
-				<input name="email" placeholder="Your email address" type="email">
-				<button data-custom-highlight-color="" type="submit">Sign up</button>
-				</form>
-				<p class="w3-text-gray w3-center">
-				We would never give your email address to a 3rd party or use your email for spam.
-				</p>
-				<br>
-			</div>
-		</div>
-	</div>
-	
-	<div class="w3-card-4 w3-eigen">
-		<div class="w3-panel">
-		<p class="w3-right w3-text-light-grey">
-		<a href="mailto:kashpartyofficial@gmail.com?Subject=Customer%20E-mail" target="_top">Contact us by E-mail</a>
-		</p>
-		</div>
-	</div>
-</div>
+        <div class="w3-panel">
+          <div class="w3-twothird">
+            <center><h2 class="w3-container" style="text-align: right">KPFrenchKeys</h2></center>
+            <p class="w3-container" style="text-align: right">
+              Tired of clicking the symbols tab on word when typing French special characters? Can you <i>really</i> be bothered to memorize the keyboard-combinations for every single accent? Let us handle it for you - we've made a simple, clutter-free tool to help you to easily type French special characters in any program. It's not magic, it's code!
+              <br><br>
+              <a a="" href="KPFrenchKeysInstaller.EXE" download="" class="w3-padding w3-round-large w3-button w3-ripple w3-border w3-border-gray">Quick Download</a>
+              <a href="https://kashparty.github.io/kpfrenchkeys/" class="w3-padding w3-round-large w3-button w3-ripple w3-border w3-border-gray">Find out more</a>
+            </p>
+          </div>
+          <img src="GoogleTranslateScreenShot.png" class="w3-image w3-card w3-round-large w3-third">
+        </div>
+      </div>
+      <p class="w3-text-gray" style="text-align: right">All graphics and content made by KashParty</p>
+    </div>
+  </div>
 
-
-
-</body></html>
+</body>
+</html>

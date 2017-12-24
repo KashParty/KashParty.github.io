@@ -1,2 +1,0 @@
-# KashParty
-KashParty Home Page.
